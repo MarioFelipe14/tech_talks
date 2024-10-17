@@ -5,19 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Talks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/ebac_logo.svg" alt="logo ebac">
             <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 14d 04h 10m 30s
+                O maior evento de tecnologia do Brasil começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Atualização</b>
+                        Allianz Parque - Barra Funda - São Paulo
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Preço</b>
+                        A partir de R$ 120,00
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando</b>
+                        12/12/2024 às 19hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua vaga
+                </a>
+            </div>
         </div>
     </header>
+    <section class="event event--frontend" >
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Front-end</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem nisi eaque odio sequi libero neque ad. Pariatur repellat culpa repudiandae obcaecati, reprehenderit vero delectus optio nulla quia iure perspiciatis?</p>
+            </div>
+            <img class="event__image" src="./images/frontend.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--ui-ux event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">UI/UX</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem nisi eaque odio sequi libero neque ad. Pariatur repellat culpa repudiandae obcaecati, reprehenderit vero delectus optio nulla quia iure perspiciatis?</p>
+            </div>
+            <img class="event__image" src="./images/ui-ux.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container"  data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Data Science</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem nisi eaque odio sequi libero neque ad. Pariatur repellat culpa repudiandae obcaecati, reprehenderit vero delectus optio nulla quia iure perspiciatis?</p>
+            </div>
+            <img class="event__image" src="./images/data.png" alt="frontend">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Back-end</h2>
+                <p class="event__details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil autem nisi eaque odio sequi libero neque ad. Pariatur repellat culpa repudiandae obcaecati, reprehenderit vero delectus optio nulla quia iure perspiciatis?</p>
+            </div>
+            <img class="event__image" src="./images/backend.png" alt="frontend">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js" ></script>
 </body>
 </html>
